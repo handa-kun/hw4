@@ -15,45 +15,48 @@
     </header>
     <main class="app">
         <div class="img_xyz">
-            <img src="" alt="graphik">
+            <img src="" alt="map">
         </div>
         <div class="form">
-            <form action="" class="Data">
+            <form  id="data">
                 <div class="changerX">
-                    <label for="X">Изменение Х:</label>
+                    <label for="X">Changing Х:</label>
                     <select name="pointX" id="">
-                        <option value="">-4</option>
-                        <option value="">-3</option>
-                        <option value="">-2</option>
-                        <option value="">-1</option>
-                        <option value="">0</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
+                        <option value="-4">-4</option>
+                        <option value="-3">-3</option>
+                        <option value="-2">-2</option>
+                        <option value="-1">-1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                     </select>
                 </div>
                 <div class="changerY">
-                    <label for="pointY">Изменение Y:</label>
-                    <input type="text" placeholder="-3 ... 5">
+                    <label for="pointY">Changing Y:</label>
+                    <input type="text" name="textY" placeholder="-3 ... 5">
+                    <p class="y_error d-none">
+                        Choose a number
+                    </p>
                 </div>
                 <div class="changerR">    
-                    <label for="pointR">Изменение R:</label>
-                    <input type="checkbox" name="">
+                    <label for="pointR">Changing R:</label>
+                    <input type="checkbox" name="check" value="-1">
                     <label for="numbers">-1</label>
-                    <input type="checkbox" name="">
+                    <input type="checkbox" name="check" value="0">
                     <label for="numbers">0</label>
-                    <input type="checkbox" name="">
+                    <input type="checkbox" name="check" value="1">
                     <label for="numbers">1</label>
-                    <input type="checkbox" name="">
+                    <input type="checkbox" name="check" value="2">
                     <label for="numbers">2</label>
-                    <input type="checkbox" name="">
+                    <input type="checkbox" name="check" value="3">
                     <label for="numbers">3</label>
-                    <input type="checkbox" name="">
+                    <input type="checkbox" name="check" value="4">
                     <label for="numbers">4</label>
                 </div>
                 <button class="submit">
-                    Check
+                    Take the pill
                 </button>
             </form>
         </div>
