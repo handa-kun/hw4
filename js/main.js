@@ -5,9 +5,9 @@ $('.submit').click((e) => {
     e.preventDefault();
 
     const data = $('form#data').serializeArray();
-    console.log(data);
+    //console.log(data);
 
-    
+    //valid
     if(Number(data[1].value) > 5 || Number(data[1].value) < -3) {
         $('.y_error').removeClass('d-none');
     } else {
@@ -28,12 +28,28 @@ $('.submit').click((e) => {
     let r0 = (r/2) * (r/2);
 
     if((r_cond <= r0 && x < 0 && y < 0) || (x <= r/2 && y <= r) || (y <= (-r/2) && y <= x && x <= r)) {
-        console.log('You are free'); 
+        choise = ('You are free'); 
     } else {
-        console.log('You choose to stay in Matrix')
+        choise = ('You choose to stay in Matrix');
     };
 
     let now = new Date();
-    console.log(`${now.getFullYear()}/${now.getUTCDate()}/${now.getUTCMonth()} ${now.getHours()}:${now.getUTCMinutes()}`);
+    let nowT = (`${now.getFullYear()}/${now.getUTCDate()}/${now.getMonth()} ${now.getHours()}:${now.getMinutes()}`);
 
+    const response = document.querySelector('.response');
+
+    let div1 = document.createElement('div');
+    let div2 = document.createElement('div');
+    let div3 = document.createElement('div');
+    let div4 = document.createElement('div');
+    let div5 = document.createElement('div'); 
+
+    div1.textContent = `${nowT}`;
+    div2.textContent = `${x}`;
+    div3.textContent = `${y}`;
+    div4.textContent = `${r}`;
+    div5.textContent = `${choise}`;
+
+    response.append(div1, div2, div3, div4, div5);
+    
 });
