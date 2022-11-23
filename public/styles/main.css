@@ -3,6 +3,12 @@
   src: url(/fonts/Matrix.ttf);
   src: url(/fonts/Matrix.eot), url(/fonts/MATRIX.svg), url(/fonts/MATRIX.woff);
 }
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .d-none {
   display: none;
 }
@@ -11,10 +17,10 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 50px;
-  border: 2px solid black;
+  border: 2px solid #080808;
 }
 .response div {
-  border: 2px solid black;
+  border: 2px solid #080808;
   text-align: center;
 }
 

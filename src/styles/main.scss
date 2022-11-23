@@ -6,12 +6,30 @@
          url(/fonts/MATRIX.woff);
 }
 
-$main-borders: 2px solid black;
+$main-borders: 2px solid #080808;
+
+%flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}   
+    
 
 .d-none {
     display: none;
 }
 
+.app {
+    @extend %flex;
+}
+
+.form {
+
+}
+
+.bg {
+    //background-image: url(/public/images/matrix.gif);
+}
 
 .response {
     display: grid;
