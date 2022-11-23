@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Matrix;
+  src: url(/fonts/Matrix.ttf);
+  src: url(/fonts/Matrix.eot), url(/fonts/MATRIX.svg), url(/fonts/MATRIX.woff);
+}
 .d-none {
   display: none;
 }
