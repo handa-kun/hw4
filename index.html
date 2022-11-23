@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal-0.3.css">
     <title>My App</title>
 </head>
 <body class="bg">
@@ -12,16 +13,23 @@
         <div class="names">
             <h1>01000001 01101100 01100101 01111000 00100000 01000010 01100101 01101100 01101111 01110110</h1>
         </div>
+        <div class="opening d-flex">
+            <div id="popup2" class="popup_block"><iframe width="560" height="315" src="https://www.youtube.com/embed/zE7PKRjrid4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="submit0">
+                Try yourself!
+            </button>
+        </div>
     </header>
-    <main class="app">
+    <main class="app d-none">
         <div class="img_xyz">
             <img src="public/images/map.svg" alt="map">
         </div>
         <div class="form">
-            <form  id="data">
+            <form  id="data" class="data0">
                 <div class="changerX">
                     <label for="X">Changing Х:</label>
-                    <select name="pointX" id="x">
+                    <select name="pointX" id="x" class="styleX">
                         <option value="-4">-4</option>
                         <option value="-3">-3</option>
                         <option value="-2">-2</option>
@@ -35,25 +43,25 @@
                 </div>
                 <div class="changerY">
                     <label for="pointY">Changing Y:</label>
-                    <input type="text" name="textY" placeholder="-3 ... 5">
+                    <input type="text" name="textY" placeholder="-3 ... 5" class="styleY">
                     <p class="y_error d-none">
                         Choose a number
                     </p>
                 </div>
                 <div class="changerR">    
-                    <label for="pointR">Changing R:</label>
-                    <input type="checkbox" name="check" value="-1">
+                    <span   for="pointR">Changing R:</span>
+                    <input type="checkbox" id="numbers" name="check" value="-1">
                     <label for="numbers">-1</label>
-                    <input type="checkbox" name="check" value="0">
-                    <label for="numbers">0</label>
-                    <input type="checkbox" name="check" value="1">
-                    <label for="numbers">1</label>
-                    <input type="checkbox" name="check" value="2">
-                    <label for="numbers">2</label>
-                    <input type="checkbox" name="check" value="3">
-                    <label for="numbers">3</label>
-                    <input type="checkbox" name="check" value="4">
-                    <label for="numbers">4</label>
+                    <input type="checkbox" id="numbers1" name="check" value="0">
+                    <label for="numbers1">0</label>
+                    <input type="checkbox" id="numbers2" name="check" value="1">
+                    <label for="numbers2">1</label>
+                    <input type="checkbox" id="numbers3" name="check" value="2">
+                    <label for="numbers3">2</label>
+                    <input type="checkbox" id="numbers4" name="check" value="3">
+                    <label for="numbers4">3</label>
+                    <input type="checkbox" id="numbers5" name="check" value="4">
+                    <label for="numbers5">4</label>
                     <p class="r_error d-none">
                         Choose a radius
                     </p>
@@ -64,7 +72,7 @@
             </form>
         </div>
     </main>
-    <footer class="result">
+    <footer class="result d-none">
         <div class="response">
             <div class="elementT">Time</div>
             <div class="elementX">X</div>
@@ -75,6 +83,8 @@
     </footer>
     <script src="js/jQuery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+
 
 
 </body>

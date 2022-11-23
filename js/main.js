@@ -1,3 +1,11 @@
+$(function () {
+    $('.submit0').click(function (){
+        $('.app').removeClass('d-none');
+        $('.result').removeClass('d-none');
+        $('.opening').addClass('d-none');
+        $('.opening').removeClass('d-flex')
+    });
+});
 
 
 
@@ -5,7 +13,6 @@ $('.submit').click((e) => {
     e.preventDefault();
 
     const data = $('form#data').serializeArray();
-    //console.log(data);
 
     //valid
     if(Number(data[1].value) > 5 || Number(data[1].value) < -3) {

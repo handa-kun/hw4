@@ -1,11 +1,36 @@
+.changerR input[type=checkbox]:checked + label::before, .changerR label::before {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
 @font-face {
   font-family: Matrix;
   src: url(/fonts/Matrix.ttf);
   src: url(/fonts/Matrix.eot), url(/fonts/MATRIX.svg), url(/fonts/MATRIX.woff);
 }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Matrix;
+  font-size: 25px;
+  color: #0f0;
+  text-shadow: 1px 1px 10px whitesmoke;
+}
+
+.names {
+  text-align: center;
+  border: 3px solid #20ad13;
+}
+
+.opening {
+  flex-direction: column;
+  align-items: center;
+}
+
 .app {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -13,15 +38,79 @@
   display: none;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.app {
+  padding: 5rem 2rem 5rem 2rem;
+  height: auto;
+  background-image: url(/public/images/M.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+.form .data0 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bg {
+  background-image: url(/public/images/matrix.gif);
+}
+
 .response {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 50px;
-  border: 2px solid #080808;
+  grid-auto-rows: 60px;
+  border: 3px solid #20ad13;
 }
 .response div {
-  border: 2px solid #080808;
+  border: 3px solid #20ad13;
   text-align: center;
+}
+
+button, .styleX, .styleY {
+  padding: 15px;
+  background: #000;
+  color: #0f0;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 4px;
+  width: max-content;
+  text-align: center;
+}
+
+.styleY {
+  width: 50px;
+}
+
+.changerR input[type=checkbox] {
+  display: none;
+}
+
+.changerR label {
+  padding-left: 20px;
+}
+
+.changerR label::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  transition: 0, 2s ease;
+  content: "";
+  background-image: url(/public/images/bluepill.png);
+}
+
+.changerR input[type=checkbox]:checked + label::before {
+  content: "";
+  background-image: url(/public/images/redpill.png);
 }
 
 /*# sourceMappingURL=main.css.map */
