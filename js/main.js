@@ -37,7 +37,7 @@ $('.submit').click((e) => {
     if((r_cond <= r0 && x < 0 && y < 0) || (x <= r/2 && y <= r) || (y <= (-r/2) && y <= x && x <= r)) {
         choise = ('You are free'); 
     } else {
-        choise = ('You choose to stay in Matrix');
+        choise = ('You chose to stay in Matrix');
     };
 
     let now = new Date();
