@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: Matrix;
-    src: url(/fonts/Matrix.ttf);
-    src: url(/fonts/Matrix.eot),
-         url(/fonts/MATRIX.svg),
-         url(/fonts/MATRIX.woff);
+    src: url("/fonts/Matrix.ttf");
+    src: url("/fonts/Matrix.eot"),
+         url("/fonts/MATRIX.svg"),
+         url("/fonts/MATRIX.woff");
 }
 
 body {
@@ -49,7 +49,7 @@ body {
     padding: $paddings;
     height: auto;
 
-    background-image: url(/public/images/M.png);
+    background-image: url("../../public/images/M.png");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -67,7 +67,7 @@ body {
     }
 
 .bg {
-    background-image: url(/public/images/matrix.gif);
+    background-image: url("../../public/images/matrix.gif");
 }
 
 .response {
@@ -117,14 +117,14 @@ button, .styleX, .styleY {
     transition: 0,2s ease;
 
     content: '';
-    background-image: url(/public/images/bluepill.png);
+    background-image: url("../../public/images/bluepill.png");
     @extend %bgimage;    
 }
 
 .changerR input[type="checkbox"]:checked + label::before {
 
     content:'';
-    background-image: url(/public/images/redpill.png);
+    background-image: url("../../public/images/redpill.png");
     @extend %bgimage;
 }
 
