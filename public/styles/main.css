@@ -7,7 +7,7 @@
 @font-face {
   font-family: Matrix;
   src: url("../../fonts/Matrix.ttf");
-  src: url("../../fonts/Matrix.eot"), url("../../fonts/MATRIX.svg"), url("../../fonts/MATRIX.woff");
+  src: url("../../fonts/MATRIX.woff");
 }
 body {
   padding: 0;
@@ -64,15 +64,14 @@ body {
   background-image: url("../../public/images/matrix.gif");
 }
 
-.response {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 60px;
+table, td {
   border: 3px solid #20ad13;
-}
-.response div {
-  border: 3px solid #20ad13;
+  border-collapse: collapse;
   text-align: center;
+}
+
+table {
+  width: 100%;
 }
 
 button, .styleX, .styleY {

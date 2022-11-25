@@ -3,9 +3,7 @@
 @font-face {
     font-family: Matrix;
     src: url("../../fonts/Matrix.ttf");
-    src: url("../../fonts/Matrix.eot"),
-         url("../../fonts/MATRIX.svg"),
-         url("../../fonts/MATRIX.woff");
+    src: url("../../fonts/MATRIX.woff");
 }
 
 body {
@@ -69,20 +67,16 @@ body {
 .bg {
     background-image: url("../../public/images/matrix.gif");
 }
-
-.response {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 60px;
-    border: $main-borders;
     
-    div {
-        border: $main-borders;
+table, td {
+    border: $main-borders;
+    border-collapse: collapse;
 
-        text-align: center;
-        
-    }
+    text-align: center;
+}
 
+table {
+    width: 100%;
 }
 
 button, .styleX, .styleY {
