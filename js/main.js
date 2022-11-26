@@ -15,11 +15,12 @@ $('.submit').click((e) => {
     const data = $('form#data').serializeArray();
 
     //valid
-    if(Number(data[1].value) > 5 || Number(data[1].value) < -3) {
+    let y_cond = Number(data[1].value) < 5 || Number(data[1].value) > -3;
+    if(Number(data[1].value) > 5 || Number(data[1].value) < -3 && y_cond) {
         $('.y_error').removeClass('d-none');
     } else {
         $('.y_error').addClass('d-none');
-    };
+    };  
 
 
     if(!data[2] || data[2].value < 0) {
