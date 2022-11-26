@@ -43,20 +43,29 @@ $('.submit').click((e) => {
     let now = new Date();
     let nowT = (`${now.getFullYear()}/${now.getUTCDate()}/${now.getMonth()} ${now.getHours()}:${now.getMinutes()}`);
 
-    const response = document.querySelector('.response');
+    /*const response = document.querySelector('.response');
 
-    let div1 = document.createElement('div');
-    let div2 = document.createElement('div');
-    let div3 = document.createElement('div');
-    let div4 = document.createElement('div');
-    let div5 = document.createElement('div'); 
-
-    div1.textContent = `${nowT}`;
-    div2.textContent = `${x}`;
-    div3.textContent = `${y}`;
-    div4.textContent = `${r}`;
-    div5.textContent = `${choise}`;
-
-    response.append(div1, div2, div3, div4, div5);
+    let td1 = document.createElement(`${'td'}`);
+    /*let td2 = document.createElement('td');
+    let td3 = document.createElement('td');
+    let td4 = document.createElement('td');
+    let td5 = document.createElement('td'); 
     
+    td1.textContent = `${nowT}`;
+      td1.textContent = `${x}`;
+    /*td3.textContent = `${y}`;
+    td4.textContent = `${r}`;
+    td5.textContent = `${choise}`;
+    response.append(td1 , td1);  
+    */
+   
+   $(function () {
+   let td1 = $('<td></td>').text(`${nowT}`);
+   let td2 = $('<td></td>').text(`${x}`);
+   let td3 = $('<td></td>').text(`${y}`);
+   let td4 = $('<td></td>').text(`${r}`);
+   let td5 = $('<td></td>').text(`${choise}`);
+   $('.response').append(td1, td2, td3, td4, td5);
+    });
+
 });
